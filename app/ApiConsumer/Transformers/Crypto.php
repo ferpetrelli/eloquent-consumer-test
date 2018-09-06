@@ -9,7 +9,7 @@ class Crypto extends BaseTransformer
 {
 
     /**
-     * Transform Grants API response to a format we can read
+     * Transform Cryptocurrencies API response to a format we can read
      */
 
     public function transform()

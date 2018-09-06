@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/list', function () {
+Route::get('/crypto-list', function () {
 
     $list = \App\Coin::query()->get();
+    dd($list);
+
+});
+
+Route::get('/currencies-list', function () {
+
+    $list = \App\Currency::query()->rawQuery(['format' => 'json'])->get();
     dd($list);
 
 });
